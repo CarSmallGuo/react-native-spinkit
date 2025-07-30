@@ -2,7 +2,6 @@ package com.react.rnspinkit;
 
 
 import android.graphics.Color;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,7 +53,7 @@ public class RNSpinkit extends SimpleViewManager<RNSpinkitView> {
     }
 
     @ReactProp(name = "isVisible")
-    public void setIsVisible(RNSpinkitView view, @Nullable Boolean visible) {
+    public void setIsVisible(RNSpinkitView view,  Boolean visible) {
         if(visible)
             view.setVisibility(View.VISIBLE);
         else
@@ -62,17 +61,17 @@ public class RNSpinkit extends SimpleViewManager<RNSpinkitView> {
     }
 
     @ReactProp(name = "color")
-    public void setColor(RNSpinkitView view, @Nullable int color) {
+    public void setColor(RNSpinkitView view,  int color) {
         view.setSpriteColor(color);
     }
 
     @ReactProp(name = "size")
-    public void setSize(RNSpinkitView view, @Nullable double size) {
+    public void setSize(RNSpinkitView view,  double size) {
         view.setSpriteSize(size);
     }
 
     @ReactProp(name = "type")
-    public void setType(RNSpinkitView view, @Nullable String spinnerType) {
+    public void setType(RNSpinkitView view,  String spinnerType) {
         view.setSpriteType(spinnerType);
 
     }
